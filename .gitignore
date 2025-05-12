@@ -1,0 +1,39 @@
+# Environnements virtuels
+venv/
+.env
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+
+# Fichiers de logs
+*.log
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Données temporaires
+*.tmp
+*.bak
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Dossiers de tests
+/tests/__pycache__/
+
+# Outputs volumineux
+*.h5
+*.joblib
+*.pkl
+*.csv
+!data/processed/features_engineered.csv
+!data/processed/processed_production_data.csv
+
+# Figures générées
+!docs/figures/*.png
+
+# Exclure les modèles sauf les fichiers d'importance
+models/*.joblib
+!models/*importance.csv 
